@@ -26,51 +26,51 @@
     };firebase.initializeApp(firebaseConfig);
 const db = firebase.database();
 
-function begen(kategori) {
+function begenVeGit(kategori, url) {
   const ref = db.ref('hemşire/' + kategori);
   ref.transaction((mevcut) => (mevcut || 0) + 1);
-  alert("Beğeniniz kaydedildi!");
+  window.location.href = url;
 }
 
 document.addEventListener('contextmenu', event => event.preventDefault());
 
   </script>
 </head>
-<body>  <!-- KART ŞABLONU -->  <div class="card">
+<body>  <div class="card">
     <iframe src="https://www.instagram.com/reel/DCyu3QUMchO/embed" allowfullscreen></iframe>
-    <button onclick="begen('Kasım_Altın')">Kasım Altın - Beğen</button>
+    <button onclick="begenVeGit('Kasım_Altın', 'https://www.instagram.com/reel/DCyu3QUMchO/')">Kasım Altın - Beğen</button>
   </div>  <div class="card">
     <iframe src="https://www.instagram.com/p/DCuS9m5s_tJ/embed" allowfullscreen></iframe>
-    <button onclick="begen('Kasım_Gümüş')">Kasım Gümüş - Beğen</button>
+    <button onclick="begenVeGit('Kasım_Gümüş', 'https://www.instagram.com/p/DCuS9m5s_tJ/')">Kasım Gümüş - Beğen</button>
   </div>  <div class="card">
     <iframe src="https://www.instagram.com/reel/DDZ794oM3P5/embed" allowfullscreen></iframe>
-    <button onclick="begen('Aralık_Altın')">Aralık Altın - Beğen</button>
+    <button onclick="begenVeGit('Aralık_Altın', 'https://www.instagram.com/reel/DDZ794oM3P5/')">Aralık Altın - Beğen</button>
   </div>  <div class="card">
     <iframe src="https://www.instagram.com/reel/DDmoGW0sOsE/embed" allowfullscreen></iframe>
-    <button onclick="begen('Aralık_Gümüş')">Aralık Gümüş - Beğen</button>
+    <button onclick="begenVeGit('Aralık_Gümüş', 'https://www.instagram.com/reel/DDmoGW0sOsE/')">Aralık Gümüş - Beğen</button>
   </div>  <div class="card">
     <iframe src="https://www.instagram.com/reel/DEsQz1JMv9E/embed" allowfullscreen></iframe>
-    <button onclick="begen('OcakSubat_Altın')">Ocak-Şubat Altın - Beğen</button>
+    <button onclick="begenVeGit('OcakSubat_Altın', 'https://www.instagram.com/reel/DEsQz1JMv9E/')">Ocak-Şubat Altın - Beğen</button>
   </div>  <div class="card">
     <iframe src="https://www.instagram.com/reel/DE5TxiYMWQK/embed" allowfullscreen></iframe>
-    <button onclick="begen('OcakSubat_Gümüş')">Ocak-Şubat Gümüş - Beğen</button>
+    <button onclick="begenVeGit('OcakSubat_Gümüş', 'https://www.instagram.com/reel/DE5TxiYMWQK/')">Ocak-Şubat Gümüş - Beğen</button>
   </div>  <div class="card">
     <iframe src="https://www.instagram.com/reel/DHB4-NDM62T/embed" allowfullscreen></iframe>
-    <button onclick="begen('Mart_Altın')">Mart Altın - Beğen</button>
+    <button onclick="begenVeGit('Mart_Altın', 'https://www.instagram.com/reel/DHB4-NDM62T/')">Mart Altın - Beğen</button>
   </div>  <div class="card">
     <iframe src="https://www.instagram.com/reel/DHtIvBRtTd_/embed" allowfullscreen></iframe>
-    <button onclick="begen('Mart_Gümüş')">Mart Gümüş - Beğen</button>
+    <button onclick="begenVeGit('Mart_Gümüş', 'https://www.instagram.com/reel/DHtIvBRtTd_/')">Mart Gümüş - Beğen</button>
   </div>  <div class="card">
     <iframe src="https://www.instagram.com/reel/DIRYqb-Mqn7/embed" allowfullscreen></iframe>
-    <button onclick="begen('Nisan_Altın')">Nisan Altın - Beğen</button>
+    <button onclick="begenVeGit('Nisan_Altın', 'https://www.instagram.com/reel/DIRYqb-Mqn7/')">Nisan Altın - Beğen</button>
   </div>  <div class="card">
     <iframe src="https://www.instagram.com/reel/DIOR2fFM4Q3/embed" allowfullscreen></iframe>
-    <button onclick="begen('Nisan_Gümüş')">Nisan Gümüş - Beğen</button>
+    <button onclick="begenVeGit('Nisan_Gümüş', 'https://www.instagram.com/reel/DIOR2fFM4Q3/')">Nisan Gümüş - Beğen</button>
   </div>  <div class="card">
     <iframe src="https://www.instagram.com/reel/DJPDh4yoMNR/embed" allowfullscreen></iframe>
-    <button onclick="begen('Mayıs_Altın')">Mayıs Altın - Beğen</button>
+    <button onclick="begenVeGit('Mayıs_Altın', 'https://www.instagram.com/reel/DJPDh4yoMNR/')">Mayıs Altın - Beğen</button>
   </div>  <div class="card">
     <iframe src="https://www.instagram.com/reel/DJZaROPIS9T/embed" allowfullscreen></iframe>
-    <button onclick="begen('Mayıs_Bronz')">Mayıs Bronz - Beğen</button>
+    <button onclick="begenVeGit('Mayıs_Bronz', 'https://www.instagram.com/reel/DJZaROPIS9T/')">Mayıs Bronz - Beğen</button>
   </div></body>
 </html>
